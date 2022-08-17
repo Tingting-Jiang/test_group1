@@ -3,7 +3,7 @@ import React from "react";
 const HomePage = () => {
     return (
       <>
-       This is the home page v5-4
+       This is the home page v5-5
        <h2>Embedding YouTube</h2>
         <iframe width="560"
             height="315" 
@@ -20,19 +20,19 @@ const HomePage = () => {
         </video>
         <div className="row text center">
             <div class="col">
-                <h3>placeholder</h3>
+                <i class="fa-light fa-heart">99</i>
             </div>
             <div class="col">
             <i class="fa-solid fa-thumbs-up"> 77</i>
             <i class="fa-thin fa-heart"></i>
-            {/* <FontAwesomeIcon icon="fa-thin fa-heart" /> */}
             </div>
             <div class="col">
-            <i class="fa-solid fa-thumbs-down">dislike</i> 
+            <i class="fa-light fa-thumbs-down">dislike</i>
             </div>
         </div>
       </>
     );
+    
   };
   
   export default HomePage;
