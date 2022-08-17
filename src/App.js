@@ -7,7 +7,7 @@ import "./vendors/fontawesome/css/all.min.css";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container p-3">
       <HomePage/>
     </div>
   );
