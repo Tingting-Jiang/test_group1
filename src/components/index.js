@@ -3,7 +3,7 @@ import React from "react";
 const HomePage = () => {
     return (
       <>
-       This is the home page v5-3
+       This is the home page v5-4
        <h2>Embedding YouTube</h2>
         <iframe width="560"
             height="315" 
@@ -14,7 +14,7 @@ const HomePage = () => {
             allowfullscreen>
         </iframe>
 
-        <video width="320" height="240" controls>
+        <video width="320" height="240" controls autoPlay>
             <source src="./../vendors/test_video.mp4" type='video/mp4'/>
          
         </video>
@@ -24,6 +24,8 @@ const HomePage = () => {
             </div>
             <div class="col">
             <i class="fa-solid fa-thumbs-up"> 77</i>
+            <i class="fa-thin fa-heart"></i>
+            {/* <FontAwesomeIcon icon="fa-thin fa-heart" /> */}
             </div>
             <div class="col">
             <i class="fa-solid fa-thumbs-down">dislike</i> 
