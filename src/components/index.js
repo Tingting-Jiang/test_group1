@@ -57,7 +57,7 @@ const HomePage = () => {
                 </div>
                 {/*  Info of author */}
                 <div className="row ms-0 me-1 text-nowrap ">
-                    <div className="col-1 d-flex align-self-center ps-0 pe-0 img-bg">
+                    <div className="col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-center ps-0 pe-0 img-bg">
                     <img
                          src={icon}
                          alt=''
@@ -66,7 +66,7 @@ const HomePage = () => {
                     />
                     </div>
 
-                    <div className="col-9 ps-0">
+                    <div className="col-7 col-md-9 col-lg-9 col-xl-9 col-xxl-9 ps-1">
                     <div className="fw-bold mb-0">
                         Author name
                     </div>
@@ -74,7 +74,7 @@ const HomePage = () => {
                     <div className="d-flex">@CA</div>
                     </div>
 
-                    <div className="col-2 ps-0 align-self-center d-grid">
+                    <div className="col-3 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ps-0 align-self-center d-grid">
                     <button className="btn rounded-pill btn-primary ">Follow</button>
                     </div>
                 </div>
@@ -88,12 +88,6 @@ const HomePage = () => {
                 <Recommandation/>   
             </div>
         </div>
-     
-        {/* <div className="col-8 d-none d-md-none">
-            <Recommandation/>   
-        </div> */}
-  
-
     
       </>
     );
@@ -101,13 +95,3 @@ const HomePage = () => {
   };
   
   export default HomePage;
-
-
-//   <iframe width="560"
-//   height="315" 
-//   src="https://www.youtube.com/embed/7CZTLogln34"
-//   title="YouTube video player"
-//   frameborder="0"
-//   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//   allowfullscreen>
-// </iframe>
