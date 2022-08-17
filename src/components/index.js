@@ -1,9 +1,10 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HomePage = () => {
     return (
       <>
-       This is the home page v5-5
+       This is the home page v5-6
        <h2>Embedding YouTube</h2>
         <iframe width="560"
             height="315" 
@@ -14,20 +15,16 @@ const HomePage = () => {
             allowfullscreen>
         </iframe>
 
-        <video width="320" height="240" controls autoPlay>
+        <video width="320px" height="240px" controls autoPlay>
             <source src="./../vendors/test_video.mp4" type='video/mp4'/>
          
         </video>
         <div className="row text center">
             <div class="col">
-                <i class="fa-light fa-heart">99</i>
+              <FontAwesomeIcon icon="fa-regular fa-heart" />99
             </div>
             <div class="col">
-            <i class="fa-solid fa-thumbs-up"> 77</i>
-            <i class="fa-thin fa-heart"></i>
-            </div>
-            <div class="col">
-            <i class="fa-light fa-thumbs-down">dislike</i>
+             <FontAwesomeIcon icon="fa-regular fa-thumbs-down" />77
             </div>
         </div>
       </>
