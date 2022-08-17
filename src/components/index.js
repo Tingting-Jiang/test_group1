@@ -1,5 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import test_video from './Videos/test_video.mp4';
+
+
 
 const HomePage = () => {
     return (
@@ -15,16 +17,16 @@ const HomePage = () => {
             allowfullscreen>
         </iframe>
 
-        <video width="320px" height="240px" controls autoPlay>
-            <source src="./../vendors/test_video.mp4" type='video/mp4'/>
-         
+        <video width="560" height="315"  controls>
+            <source src={test_video} type='video/mp4'/> 
+            
         </video>
         <div className="row text center">
             <div class="col">
-              <FontAwesomeIcon icon="fa-regular fa-heart" />99
+                <i class="fa-regular fa-heart">99</i>
             </div>
             <div class="col">
-             <FontAwesomeIcon icon="fa-regular fa-thumbs-down" />77
+            <i class="fa-regular fa-thumbs-down">100</i>
             </div>
         </div>
       </>
