@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import test_video from './Videos/test_video.mp4';
+import main_video from './Videos/main_video.mp4';
 import Recommandation from "./recommendation";
 import Introduction from "./introduction";
 import Comments from './comments'
@@ -36,7 +36,7 @@ const HomePage = () => {
             <div className="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                 {/* video player */}
                 <video width="100%" height="auto"  controls>
-                    <source src={test_video} type='video/mp4'/>   
+                    <source src={main_video} type='video/mp4'/>   
                 </video>
 
                 {/*  like and dislike */}
@@ -58,7 +58,7 @@ const HomePage = () => {
                     <path
                         d={likeNum === like? lightLike: solidLike}
                         className="style-scope yt-icon"
-                        onClick={editLike}
+                        // onClick={editLike}
                     />
                     </g>
                 </svg>
@@ -75,7 +75,7 @@ const HomePage = () => {
                         width: "24px",
                         height: "24px",
                     }}
-                    onClick={editDislike}
+                    // onClick={editDislike}
                     >
                     <g className="style-scope yt-icon">
                     <path
