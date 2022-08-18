@@ -12,8 +12,8 @@ const Introduction =({
     return (
         <>
         <hr></hr>
-        <div className="row ms-0 me-1 ">
-            <div className="col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-center ps-0 pe-0">
+        <div className="row ps-1 me-1 ">
+            <div className="col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-start ps-0 pe-0">
                 <img
                     src={icon}
                     alt=''
@@ -30,7 +30,7 @@ const Introduction =({
                 <div class="introduction pt-1" >{authorItem.description}</div>
             </div>
 
-            <div className="col-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ps-0 align-self-center d-grid d-flex justify-content-end  me-0 pe-0"
+            <div className="col-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ps-0 align-self-start d-grid d-flex justify-content-end  me-0 pe-0"
                 id='btnSubscribe'>
             <button className="btn btn-sm btnSubscribe">SUBSCRIBE</button>
             </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import main_video from './Videos/main_video.mp4';
 import Recommandation from "./recommendation";
 import Introduction from "./introduction";
-import Comments from './comments'
+import Comments from './newComments'
 import { lightLike, solidLike, lightDislike, solidDislike, ShareIcon, Download, Clip, Save} from "./icons";
 import "./style.css"
 
@@ -64,7 +64,6 @@ const HomePage = () => {
                         </g>
                     </svg>
                     <span className="ps-1 pe-3 lh-sm iconFont"> {likeNum}</span>
-
                     <svg
                         viewBox="0 0 24 24"
                         preserveAspectRatio="xMidYMid meet"
@@ -85,7 +84,6 @@ const HomePage = () => {
                         />
                         </g>
                     </svg>
-
                    <span className="ps-1 lh-sm pe-3 iconFont"> DISLIKE</span>
                    <ShareIcon/>
                    <Download/>

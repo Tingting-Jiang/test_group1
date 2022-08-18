@@ -41,7 +41,7 @@ const Comments = () => {
         <>
         {/* Add new comments */}
         <div className="row ps-1 me-1">
-            <div className=".d-none d-md-block col-md-2 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-start ps-40 pe-0 text-nowrap"
+            <div className=".d-none d-md-block col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-start ps-1 me-1"
             id='commentIcon'>
                 <img
                     alt={`avatar`}
