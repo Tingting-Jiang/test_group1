@@ -1,7 +1,5 @@
 import React from "react";
-import test_video from '../Videos/test_video.mp4';
-
-
+import test_video from './Videos/test_video.mp4';
 
 const Recommendation = ()=> {
     return (

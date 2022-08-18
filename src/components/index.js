@@ -1,36 +1,30 @@
 import React, { useState } from "react";
 import test_video from './Videos/test_video.mp4';
-import icon from './Videos/logo192.png';
-import Recommandation from "./recommendations/index";
+import Recommandation from "./recommendation";
+import Introduction from "./introduction";
+import Comments from './comments'
+import { lightLike, solidLike, lightDislike, solidDislike, ShareIcon, Download, Clip, Save} from "./icons";
 
 const HomePage = () => {
+    const authorItem = {
+        name: "Author name",
+        handle: "California",
+        description: "The short description about the author of the vedio and the contents of this video"
+    };
     const like= 199;
-    const dislike = 99;
     const [likeNum, setLikeNum] = useState(like);
-    const [dislikeNum, setDislikeNum] = useState(dislike);
-    const [clickLike, setClickLike] = useState(false);
     const [clickDislike, setClickDislike] = useState(false);
 
-    const editLike = () =>{
-        if (!clickLike){
+    const editLike = () => {
+        console.log("clicked like once")
+        if (likeNum === like)
             setLikeNum(likeNum+1);
-            setClickLike(true)
-        }
-        else {
-            setLikeNum(like);
-            setClickLike(false);
-        }
+        else setLikeNum(like);
     }
 
     const editDislike = ()=>{
-        if (!clickDislike){
-            setDislikeNum(dislikeNum+1);
-            setClickDislike(true);
-        }
-        else {
-            setDislikeNum(dislike);
-            setClickDislike(false);
-        }
+        console.log("clicked dislike once")
+        setClickDislike(!clickDislike);
     }
 
     return (
@@ -46,44 +40,72 @@ const HomePage = () => {
                 </video>
 
                 {/*  like and dislike */}
-                <div className="d-flex justify-content-end mb-4 mt-2">
-                    <i class="fa-regular fa-heart pe-2" 
-                     style={{ color: clickLike ? "red" : "black" }}
-                    onClick={editLike}> {likeNum} &nbsp;</i> 
-
-                    <i class="fa-regular fa-thumbs-down pe-2 ps-2"
-                     style={{ color: clickDislike ? "blue" : "black" }}
-                     onClick={editDislike}> {dislikeNum} &nbsp; </i> 
-                </div>
-                {/*  Info of author */}
-                <div className="row ms-0 me-1 text-nowrap ">
-                    <div className="col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-center ps-0 pe-0 img-bg">
-                    <img
-                         src={icon}
-                         alt=''
-                         width="48px"
-                         className="rounded-circle float-start"
+                <div className="d-flex justify-content-end mb-4 mt-2 ">
+                <svg
+                    viewBox="0 0 24 24"
+                    preserveAspectRatio="xMidYMid meet"
+                    focusable="false"
+                    className="style-scope yt-icon"
+                    style={{
+                        pointerEvents: "none",
+                        display: "block",
+                        width: "24px",
+                        height: "24px",
+                    }}
+                    
+                    >
+                    <g className="style-scope yt-icon">
+                    <path
+                        d={likeNum === like? lightLike: solidLike}
+                        className="style-scope yt-icon"
+                        onClick={editLike}
                     />
-                    </div>
+                    </g>
+                </svg>
+                <span className="ps-1 pe-3 fw-normal lh-sm"> {likeNum}</span>
 
-                    <div className="col-7 col-md-9 col-lg-9 col-xl-9 col-xxl-9 ps-1">
-                    <div className="fw-bold mb-0">
-                        Author name
-                    </div>
+                <svg
+                    viewBox="0 0 24 24"
+                    preserveAspectRatio="xMidYMid meet"
+                    focusable="false"
+                    className="style-scope yt-icon"
+                    style={{
+                        pointerEvents: "none",
+                        display: "block",
+                        width: "24px",
+                        height: "24px",
+                    }}
+                    onClick={editDislike}
+                    >
+                    <g className="style-scope yt-icon">
+                    <path
+                        d={clickDislike? solidDislike: lightDislike}
+                        className="style-scope yt-icon"
+                    />
+                    </g>
+                </svg>
 
-                    <div className="d-flex">@CA</div>
-                    </div>
-
-                    <div className="col-3 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ps-0 align-self-center d-grid">
-                    <button className="btn rounded-pill btn-primary ">Follow</button>
-                    </div>
+                   <span className="ps-1 fw-normal lh-sm pe-3"> DISLIKE</span>
+                   <ShareIcon/>
+                   <span className="ps-1 fw-normal lh-sm pe-3 "> SHARE</span>
+                   <Download/>
+                   <span className="ps-1 fw-normal lh-sm pe-3 "> DOWNLOAD</span>
+                   <Clip/>
+                   <span className="ps-1 fw-normal lh-sm pe-3 "> CLIP</span>
+                   <Save/>
+                   <span className="ps-1 fw-normal lh-sm pe-3 "> SAVE</span>
                 </div>
-                <p class="fs-6">The ASICS Gel Kayano 29 returns and continues on its legacy as a cushioned stability shoe with an even softer underfoot expierence. Featuring a new Blast+ midsole and adaptive LITE TRUSS system, the Kayano 29 offers a substantial upgrade that fans of the series will continue to bring out for a wide variety of daily training.</p>
-                <hr></hr>
-                {/*  About the comment */}
-                <p class='fs-5'>The Comments are closed</p>
 
+                {/*  Info of author */}
+                <Introduction authorItem={authorItem}/>
+                <hr></hr>
+
+                {/*  About the comment */}
+                <p class='fs-5'>Comments are turned off.</p>
+                <Comments/>
+                
             </div>
+            {/* Recommendation List */}
             <div className="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <Recommandation/>   
             </div>
