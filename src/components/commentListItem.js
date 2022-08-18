@@ -8,7 +8,7 @@ const CommentListItem = ({ comment }) => {
   return (
     <li className="list-group-item ">
       <div className="row ms-0 me-1 text-nowrap ">
-        <div className="col-1 d-flex align-self-start ps-0 pe-0">
+        <div className="col-1 d-flex align-self-start ps-0 pe-0 me-2" id='commentIcon'>
           <img
             alt={`${userName}-avatar`}
             src={icon}
@@ -17,11 +17,11 @@ const CommentListItem = ({ comment }) => {
           />
         </div>
 
-        <div className="col-11 ps-1">
-          <div className="fw-bold mb-0">
+        <div className="col-10 ps-0">
+          <div className="fw-bold mb-0 commentsWords">
             {userName} 
           </div>
-          <div className="fs-6">{comments}</div>
+          <div className="commentsWords">{comments}</div>
 
         </div>
 

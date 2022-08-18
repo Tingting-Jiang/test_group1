@@ -4,6 +4,7 @@ import Recommandation from "./recommendation";
 import Introduction from "./introduction";
 import Comments from './comments'
 import { lightLike, solidLike, lightDislike, solidDislike, ShareIcon, Download, Clip, Save} from "./icons";
+import "./style.css"
 
 const HomePage = () => {
     const authorItem = {
@@ -34,66 +35,63 @@ const HomePage = () => {
     
         <div className="row">
             <div className="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-                {/* video player */}
+                {/* video player */} 
                 <video width="100%" height="auto"  controls>
                     <source src={main_video} type='video/mp4'/>   
                 </video>
-
+                <div className="description"> The Real Cost - Cautions Against The Use of e-Cigarettes</div>
+            
                 {/*  like and dislike */}
-                <div className="d-flex justify-content-end mb-4 mt-2 ">
-                <svg
-                    viewBox="0 0 24 24"
-                    preserveAspectRatio="xMidYMid meet"
-                    focusable="false"
-                    className="style-scope yt-icon"
-                    style={{
-                        pointerEvents: "none",
-                        display: "block",
-                        width: "24px",
-                        height: "24px",
-                    }}
-                    
-                    >
-                    <g className="style-scope yt-icon">
-                    <path
-                        d={likeNum === like? lightLike: solidLike}
+                <div className="d-flex justify-content-end mb-4 mt-2 " id='icons'>
+                    <svg
+                        viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet"
+                        focusable="false"
                         className="style-scope yt-icon"
-                        // onClick={editLike}
-                    />
-                    </g>
-                </svg>
-                <span className="ps-1 pe-3 fw-normal lh-sm"> {likeNum}</span>
+                        style={{
+                            pointerEvents: "none",
+                            display: "block",
+                            width: "24px",
+                            height: "24px",
+                        }}
+                        >
+                        <g className="style-scope yt-icon">
+                        <path
+                            d={likeNum === like? lightLike: solidLike}
+                            className="style-scope yt-icon"
+                            // onClick={editLike}
+                        />
+                        </g>
+                    </svg>
+                    <span className="ps-1 pe-3 lh-sm iconFont"> {likeNum}</span>
 
-                <svg
-                    viewBox="0 0 24 24"
-                    preserveAspectRatio="xMidYMid meet"
-                    focusable="false"
-                    className="style-scope yt-icon"
-                    style={{
-                        pointerEvents: "none",
-                        display: "block",
-                        width: "24px",
-                        height: "24px",
-                    }}
-                    // onClick={editDislike}
-                    >
-                    <g className="style-scope yt-icon">
-                    <path
-                        d={clickDislike? solidDislike: lightDislike}
+                    <svg
+                        viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet"
+                        focusable="false"
                         className="style-scope yt-icon"
-                    />
-                    </g>
-                </svg>
+                        style={{
+                            pointerEvents: "none",
+                            display: "block",
+                            width: "24px",
+                            height: "24px",
+                        }}
+                        // onClick={editDislike}
+                        >
+                        <g className="style-scope yt-icon">
+                        <path
+                            d={clickDislike? solidDislike: lightDislike}
+                            className="style-scope yt-icon"
+                        />
+                        </g>
+                    </svg>
 
-                   <span className="ps-1 fw-normal lh-sm pe-3"> DISLIKE</span>
+                   <span className="ps-1 lh-sm pe-3 iconFont"> DISLIKE</span>
                    <ShareIcon/>
-                   <span className="ps-1 fw-normal lh-sm pe-3 "> SHARE</span>
                    <Download/>
-                   <span className="ps-1 fw-normal lh-sm pe-3 "> DOWNLOAD</span>
                    <Clip/>
-                   <span className="ps-1 fw-normal lh-sm pe-3 "> CLIP</span>
                    <Save/>
-                   <span className="ps-1 fw-normal lh-sm pe-3 "> SAVE</span>
+             
                 </div>
 
                 {/*  Info of author */}
