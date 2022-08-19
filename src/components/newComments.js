@@ -1,8 +1,8 @@
 import React, { useState} from "react";
 import CommentListItem from './commentListItem';
-import icon from './Videos/logo192.png';
 import './style.css';
 import {commentsList} from './constants';
+import {Sort} from './icons';
 
 const Comments = () => {
     const [newComment, setNewComment] = useState('');
@@ -72,7 +72,7 @@ const Comments = () => {
 
         {/* Display other users comments */}
         <ul className="list-group">
-            
+            <Sort/>
             {commentsList.map((commentItem, key) => {
                 return <CommentListItem key={key} comment={commentItem} index={key} />;
             })}

@@ -14,7 +14,7 @@ const Introduction =({
         <>
         <hr></hr>
         <div className="row ps-1 me-1 ">
-            <div className="col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-start ps-0 pe-0">
+            <div className="col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1 align-self-start ps-0 pe-0">
                 <img
                     src={icon}
                     alt=''
@@ -28,9 +28,9 @@ const Introduction =({
                     {authorItem.name}
                 </div> 
                 <div className="subscribeNum pt-0">{authorItem.subscribe}</div>
-                <div class="introduction pt-1" >
+                <div className="introduction pt-1" >
                     {authorItem.description}
-                    <a className="link-primary" href={authorItem.html}>
+                    <a className="link-primary " href={authorItem.html}>
                         {authorItem.html}
                     </a>
               </div>

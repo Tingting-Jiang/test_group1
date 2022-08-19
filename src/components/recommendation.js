@@ -17,26 +17,26 @@ const Recommendation = ()=> {
             <div className="fs-5 fw-bold">
                 Recommended For You
             </div>
-                <li className="list-group-item " >
+                <li className="list-group-item bg-light " >
                     <video width="100%" height="auto"  controls poster={r1_pic}>
                         <source src={recommend1} type='video/mp4'/>   
                     </video>
                     <div className="iconFont">Dangers of Vaping Nicotine = Irritability</div>
                 </li>
-                <li className="list-group-item " >
+                <li className="list-group-item bg-light" >
                     <video width="100%" height="auto"  controls poster={r2_pic}>
                         <source src={recommend2} type='video/mp4' />   
                     </video>
                     <div className="iconFont">Dangers of Vaping _ Nicotine = Brain Poison (extended version)</div>
                 </li>
                 
-                <li className="list-group-item " >
+                <li className="list-group-item bg-light" >
                     <video width="100%" height="auto"  controls poster={r3_pic}>
                         <source src={recommend3} type='video/mp4'/>   
                     </video>
                     <div className="iconFont">Possessed By Nicotine The Real Cost of Vapes</div>
                 </li>
-                <li className="list-group-item " >
+                <li className="list-group-item bg-light" >
                     <video width="100%" height="auto"  controls poster={r4_pic}>
                         <source src={recommend4} type='video/mp4'/>   
                     </video>

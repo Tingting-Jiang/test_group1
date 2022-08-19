@@ -7,7 +7,7 @@ import "./vendors/fontawesome/css/all.min.css";
 
 function App() {
   return (
-    <div className="container-xxl ps-20 pe-20 bg-light text-dark mt-50 ">
+    <div className="container-xxl p-3 bg-light text-dark mt-50 ">
       <HomePage/>
     </div>
   );

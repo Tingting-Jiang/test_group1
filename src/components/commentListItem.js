@@ -8,8 +8,6 @@ import user5_pic from './Videos/profile_pic5.png';
 import user6_pic from './Videos/profile_pic6.png';
 import { LittleLike, LittleUnlike } from "./icons";
 
-
-
 const CommentListItem = ({ comment, index }) => {
     const {userName,
         time,
@@ -20,9 +18,9 @@ const CommentListItem = ({ comment, index }) => {
     ]
 
   return (
-    <li className="list-group-item ">
+    <li className="list-group-item bg-light ">
       <div className="row ms-0 me-1 text-nowrap ">
-        <div className="col-1 d-flex align-self-start ps-0 pe-0 me-2" id='commentIcon'>
+        <div className="col-1 align-self-start ps-0 pe-0 me-2" id='commentIcon'>
           <img
             alt={icon}
             src={avatarList[index]}

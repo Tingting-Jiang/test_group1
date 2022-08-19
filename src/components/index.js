@@ -46,7 +46,7 @@ const HomePage = () => {
                 {/*  like and dislike */}
                 <div className="d-flex justify-content-between iconLine">
                     <div className="viewDes">11,292 views&#183;Sep 23, 2018 </div>
-                    <div className="d-flex justify-content-end mb-4 mt-2 " id='icons'>
+                    <div className="d-flex justify-content-end mb-4 mt-2" id='icons'>
                         <svg
                             viewBox="0 0 24 24"
                             preserveAspectRatio="xMidYMid meet"
@@ -102,7 +102,7 @@ const HomePage = () => {
                 <hr></hr>
 
                 {/*  About the comment */}
-                <p class='fs-5'>Comments are turned off.</p>
+                <p className='fs-5'>Comments are turned off.</p>
                 <Comments/>
                     
                 
