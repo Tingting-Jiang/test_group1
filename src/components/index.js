@@ -5,6 +5,7 @@ import Introduction from "./introduction";
 import Comments from './newComments'
 import { lightLike, solidLike, lightDislike, solidDislike, ShareIcon, Download, Clip, Save} from "./icons";
 import "./style.css"
+import main_pic from './Videos/main_pic.png';
 
 const HomePage = () => {
     const authorItem = {
@@ -36,7 +37,7 @@ const HomePage = () => {
         <div className="row">
             <div className="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                 {/* video player */} 
-                <video width="100%" height="auto"  controls>
+                <video width="100%" height="auto"  controls poster={main_pic}>
                     <source src={main_video} type='video/mp4'/>   
                 </video>
                 <div className="description"> The Real Cost - Cautions Against The Use of e-Cigarettes</div>
