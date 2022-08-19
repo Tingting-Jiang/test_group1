@@ -9,9 +9,10 @@ import main_pic from './Videos/main_pic.png';
 
 const HomePage = () => {
     const authorItem = {
-        name: "Author name",
-        handle: "California",
-        description: "The short description about the author of the vedio and the contents of this video"
+        name: "The Real Cost",
+        subscribe: "66.8K subscribers",
+        description: "Vaping can put dangerous chemicals, like diacetyl, into your lungs. Learn more about the real cost of vapes: ",
+        html:"https://therealcost.betobaccofree.hhs.gov/"
     };
     const like= 199;
     const [likeNum, setLikeNum] = useState(like);
@@ -43,54 +44,57 @@ const HomePage = () => {
                 <div className="description"> The Real Cost - Cautions Against The Use of e-Cigarettes</div>
             
                 {/*  like and dislike */}
-                <div className="d-flex justify-content-end mb-4 mt-2 " id='icons'>
-                    <svg
-                        viewBox="0 0 24 24"
-                        preserveAspectRatio="xMidYMid meet"
-                        focusable="false"
-                        className="style-scope yt-icon"
-                        style={{
-                            pointerEvents: "none",
-                            display: "block",
-                            width: "24px",
-                            height: "24px",
-                        }}
-                        >
-                        <g className="style-scope yt-icon">
-                        <path
-                            d={likeNum === like? lightLike: solidLike}
+                <div className="d-flex justify-content-between iconLine">
+                    <div className="viewDes">11,292 views&#183;Sep 23, 2018 </div>
+                    <div className="d-flex justify-content-end mb-4 mt-2 " id='icons'>
+                        <svg
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            focusable="false"
                             className="style-scope yt-icon"
-                            // onClick={editLike}
-                        />
-                        </g>
-                    </svg>
-                    <span className="ps-1 pe-3 lh-sm iconFont"> {likeNum}</span>
-                    <svg
-                        viewBox="0 0 24 24"
-                        preserveAspectRatio="xMidYMid meet"
-                        focusable="false"
-                        className="style-scope yt-icon"
-                        style={{
-                            pointerEvents: "none",
-                            display: "block",
-                            width: "24px",
-                            height: "24px",
-                        }}
-                        // onClick={editDislike}
-                        >
-                        <g className="style-scope yt-icon">
-                        <path
-                            d={clickDislike? solidDislike: lightDislike}
+                            style={{
+                                pointerEvents: "none",
+                                display: "block",
+                                width: "24px",
+                                height: "24px",
+                            }}
+                            >
+                            <g className="style-scope yt-icon">
+                            <path
+                                d={likeNum === like? lightLike: solidLike}
+                                className="style-scope yt-icon"
+                                // onClick={editLike}
+                            />
+                            </g>
+                        </svg>
+                        <span className="ps-1 pe-3 lh-sm iconFont"> {likeNum}</span>
+                        <svg
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            focusable="false"
                             className="style-scope yt-icon"
-                        />
-                        </g>
-                    </svg>
-                   <span className="ps-1 lh-sm pe-3 iconFont"> DISLIKE</span>
-                   <ShareIcon/>
-                   <Download/>
-                   <Clip/>
-                   <Save/>
-             
+                            style={{
+                                pointerEvents: "none",
+                                display: "block",
+                                width: "24px",
+                                height: "24px",
+                            }}
+                            // onClick={editDislike}
+                            >
+                            <g className="style-scope yt-icon">
+                            <path
+                                d={clickDislike? solidDislike: lightDislike}
+                                className="style-scope yt-icon"
+                            />
+                            </g>
+                        </svg>
+                    <span className="ps-1 lh-sm pe-3 iconFont"> DISLIKE</span>
+                    <ShareIcon/>
+                    <Download/>
+                    <Clip/>
+                    <Save/>
+                
+                    </div>
                 </div>
 
                 {/*  Info of author */}
@@ -100,6 +104,7 @@ const HomePage = () => {
                 {/*  About the comment */}
                 <p class='fs-5'>Comments are turned off.</p>
                 <Comments/>
+                    
                 
             </div>
             {/* Recommendation List */}
@@ -114,3 +119,6 @@ const HomePage = () => {
   };
   
   export default HomePage;
+
+
+  

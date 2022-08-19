@@ -2,24 +2,11 @@ import React, { useState} from "react";
 import CommentListItem from './commentListItem';
 import icon from './Videos/logo192.png';
 import './style.css';
+import {commentsList} from './constants';
 
 const Comments = () => {
     const [newComment, setNewComment] = useState('');
-    const commentsList = [
-        { 
-            userName: "Foo Bar1",
-            comments: "I don't like this"
-        },
-        {  
-            userName: "Foo Bar2",
-            comments:"It's a waste of time"
-        },
-        {
-            userName: "Foo Bar3",
-            comments: "Terrible video"
-        },
-        
-    ]
+    
     const [commentli, setCommentli] = useState(commentsList);
     const addComment = async ()=> {
         const newContent = newComment;
@@ -40,8 +27,8 @@ const Comments = () => {
     return (
         <>
         {/* Add new comments */}
-        <div className="row ps-1 me-1">
-            <div className=".d-none d-md-block col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-start ps-1 me-1"
+        {/* <div className="row ps-1 me-1">
+            <div className=".d-none d-md-block col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex align-self-start ps-1 me-0"
             id='commentIcon'>
                 <img
                     alt={`avatar`}
@@ -81,12 +68,13 @@ const Comments = () => {
             </div>
         </div>
 
-        </div>
+        </div> */}
 
         {/* Display other users comments */}
         <ul className="list-group">
-            {commentli.map((commentItem, key) => {
-                return <CommentListItem key={key} comment={commentItem} />;
+            
+            {commentsList.map((commentItem, key) => {
+                return <CommentListItem key={key} comment={commentItem} index={key} />;
             })}
         </ul>
         </>

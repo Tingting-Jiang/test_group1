@@ -25,7 +25,7 @@ const Recommendation = ()=> {
                 </li>
                 <li className="list-group-item " >
                     <video width="100%" height="auto"  controls poster={r2_pic}>
-                        <source src={recommend4} type='video/mp4' />   
+                        <source src={recommend2} type='video/mp4' />   
                     </video>
                     <div className="iconFont">Dangers of Vaping _ Nicotine = Brain Poison (extended version)</div>
                 </li>
@@ -38,7 +38,7 @@ const Recommendation = ()=> {
                 </li>
                 <li className="list-group-item " >
                     <video width="100%" height="auto"  controls poster={r4_pic}>
-                        <source src={recommend2} type='video/mp4'/>   
+                        <source src={recommend4} type='video/mp4'/>   
                     </video>
                     <div className="iconFont">The Facts About Vapes Are Scary Enough _ The Real Cost</div>
                 </li>

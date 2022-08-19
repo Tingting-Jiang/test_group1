@@ -1,12 +1,13 @@
 import React from "react";
-import icon from './Videos/logo192.png';
-import "./style.css"
+import icon from './Videos/logo.png';
+import "./style.css";
 
 const Introduction =({
     authorItem = {
-      name: "Author name",
-      handle: "California",
-      description: "placeholder for description"
+      name: "The Real Cost",
+      subscribe: "66.8K subscribers",
+      description: "Vaping can put dangerous chemicals, like diacetyl, into your lungs. Learn more about the real cost of vapes: ",
+      html:"https://therealcost.betobaccofree.hhs.gov/"
     },
   }) => {
     return (
@@ -26,8 +27,13 @@ const Introduction =({
                 <div className="fw-bold mb-0 introduction  ">
                     {authorItem.name}
                 </div> 
-                <div className="introduction pt-0">@{authorItem.handle}</div>
-                <div class="introduction pt-1" >{authorItem.description}</div>
+                <div className="subscribeNum pt-0">{authorItem.subscribe}</div>
+                <div class="introduction pt-1" >
+                    {authorItem.description}
+                    <a className="link-primary" href={authorItem.html}>
+                        {authorItem.html}
+                    </a>
+              </div>
             </div>
 
             <div className="col-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ps-0 align-self-start d-grid d-flex justify-content-end  me-0 pe-0"
