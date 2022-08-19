@@ -5,24 +5,24 @@ import {commentsList} from './constants';
 import {Sort} from './icons';
 
 const Comments = () => {
-    const [newComment, setNewComment] = useState('');
+    // const [newComment, setNewComment] = useState('');
     
-    const [commentli, setCommentli] = useState(commentsList);
-    const addComment = async ()=> {
-        const newContent = newComment;
-        if (newContent !== ''){
-            let tempList = [...commentli];
-            tempList.unshift({
-                userName: 'new user',
-                comments: newContent
-            })
-            await setCommentli(tempList);
-            await setNewComment('');
-        } else return;
-    }
-    const cancelComment = async () => {
-        await setNewComment('');
-    }
+    // const [commentli, setCommentli] = useState(commentsList);
+    // const addComment = async ()=> {
+    //     const newContent = newComment;
+    //     if (newContent !== ''){
+    //         let tempList = [...commentli];
+    //         tempList.unshift({
+    //             userName: 'new user',
+    //             comments: newContent
+    //         })
+    //         await setCommentli(tempList);
+    //         await setNewComment('');
+    //     } else return;
+    // }
+    // const cancelComment = async () => {
+    //     await setNewComment('');
+    // }
 
     return (
         <>

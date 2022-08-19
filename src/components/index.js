@@ -18,25 +18,30 @@ const HomePage = () => {
     const [likeNum, setLikeNum] = useState(like);
     const [clickDislike, setClickDislike] = useState(false);
 
-    const editLike = () => {
-        console.log("clicked like once")
-        if (likeNum === like)
-            setLikeNum(likeNum+1);
-        else setLikeNum(like);
-    }
+    // const editLike = () => {
+    //     console.log("clicked like once")
+    //     if (likeNum === like)
+    //         setLikeNum(likeNum+1);
+    //     else setLikeNum(like);
+    // }
 
-    const editDislike = ()=>{
-        console.log("clicked dislike once")
-        setClickDislike(!clickDislike);
-    }
+    // const editDislike = ()=>{
+    //     console.log("clicked dislike once")
+    //     setClickDislike(!clickDislike);
+    // }
 
     return (
        <>
-        This is the home page v6-1
-        <h2>Embedding YouTube</h2>
+        {/* This is the home page v6-1
+        <h2>Embedding YouTube</h2> */}
+    
     
         <div className="row">
+       
             <div className="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+            <div className="fs-5 fw-bold pb-2">
+                Selected Video
+            </div>
                 {/* video player */} 
                 <video width="100%" height="auto"  controls poster={main_pic}>
                     <source src={main_video} type='video/mp4'/>   
