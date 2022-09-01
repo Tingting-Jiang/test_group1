@@ -87,7 +87,7 @@
 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #icons {
         display: none !important;
     }
@@ -100,7 +100,7 @@
     #btnSubscribe {
         display: none !important;
     }
-}
+} */
 
 .list-group-item {
     padding-left: 5px !important;

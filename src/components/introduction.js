@@ -13,8 +13,8 @@ const Introduction =({
     return (
         <>
         <hr></hr>
-        <div className="row ps-1 me-1 ">
-            <div className="col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1 align-self-start ps-0 pe-0">
+        <div className="d-flex flex-row ps-1 me-1 ">
+            <div className=" align-self-start ps-0 pe-0">
                 <img
                     src={icon}
                     alt=''
@@ -23,22 +23,17 @@ const Introduction =({
                 />
             </div>
 
-            <div className="col-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9 ps-1 intro">
+            <div className="ps-2 intro ">
                 <div className="fw-bold mb-0 introduction  ">
                     {authorItem.name}
                 </div> 
                 <div className="subscribeNum pt-0">{authorItem.subscribe}</div>
-                <div className="introduction pt-1" >
+                <div className="introduction pt-1 text-wrap" >
                     {authorItem.description}
                     <a className="link-primary " href={authorItem.html}>
                         {authorItem.html}
                     </a>
               </div>
-            </div>
-
-            <div className="col-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ps-0 align-self-start d-grid d-flex justify-content-end  me-0 pe-0"
-                id='btnSubscribe'>
-            <button className="btn btn-sm btnSubscribe">SUBSCRIBE</button>
             </div>
             
         </div>
