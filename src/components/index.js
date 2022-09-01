@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import main_video from './Videos/main_video.mp4';
 import Introduction from "./introduction";
 import Comments from './newComments'
 import "./style.css"
 import main_pic from './Videos/main_pic.png';
+import FontLink from "./fontLink";
+import CommentsTurnedOff from "./commentsTurnedOff";
 
 const HomePage = () => {
     const authorItem = {
@@ -18,8 +20,8 @@ const HomePage = () => {
         {/* This is the home page v6-1
         <h2>Embedding YouTube</h2> */}
     
-            <div className="fs-5 fw-bold pb-2">
-                Health Vid
+            <div className="fs-5 fw-bold pb-2 bg-light">
+                <FontLink/>
             </div>
                 {/* video player */} 
                 <video width="100%" height="auto"  controls poster={main_pic}>
@@ -33,7 +35,7 @@ const HomePage = () => {
                 <hr></hr>
 
                 {/*  About the comment */}
-                <p className='fs-5'>Comments are turned off.</p>
+               <CommentsTurnedOff/>
                 <Comments/>
       </>
     );

@@ -2,12 +2,12 @@ import React, { useState} from "react";
 import CommentListItem from './commentListItem';
 import './style.css';
 import {commentsList} from './constants';
-import {Sort} from './icons';
-import icon from './Videos/logo192.png'
+import defaultUser from './Videos/default.png';
 
 const Comments = () => {
     const [newComment, setNewComment] = useState('');
     const [commentli, setCommentli] = useState(commentsList);
+    const [commentlength, setCommentLength] = useState(commentli.length);
 
     const addComment = async ()=> {
         const newContent = newComment;
@@ -16,9 +16,11 @@ const Comments = () => {
             tempList.unshift({
                 userName: 'new user',
                 time:'just now',
-                comments: newContent
+                comments: newContent,
+                avatar:-1,
             })
             await setCommentli(tempList);
+            await setCommentLength(commentli.length);
             await setNewComment('');
         } else return;
     }
@@ -30,14 +32,14 @@ const Comments = () => {
         <>
         {/* Display other users comments */}
         <ul className="list-group">
-            <Sort/>
+            <div className='commentsFirst me-3 mb-2'>{commentlength} Comments</div> 
             {/* Add new comments */}
             <div className="d-flex flex-row ps-1 me-1">
                 <div className=" align-self-start ps-1 me-0"
                 id='commentIcon'>
                     <img
                         alt={`avatar`}
-                        src={icon}
+                        src={defaultUser}
                         width="48px"
                         className="rounded-circle float-start"
                     />

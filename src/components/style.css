@@ -9,6 +9,11 @@
     height: 40px;
 }
 
+.font-link {
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 50px !important;
+    color: rgb(135,206,250);
+}
 
 
 .viewDes {

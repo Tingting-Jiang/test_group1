@@ -47,7 +47,7 @@ export const LittleUnlike = () => (
 export const Sort = (props) => (
   <>
   <div className="d-flex">
-   <span className='commentsFirst me-3'>385 Comments</span> 
+   <span className='commentsFirst me-3 mb-2'>385 Comments</span> 
     {/* <svg
       viewBox="0 0 24 24"
       preserveAspectRatio="xMidYMid meet"
