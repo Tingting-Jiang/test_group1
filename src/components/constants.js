@@ -1,7 +1,7 @@
 export const commentsList = [
     { 
         userName: "Davud Vita",
-        time:"2 years ago",
+        time:"2 months ago",
         comments: "The PSA is so annoying.",
         avatar:0
     },
@@ -13,26 +13,26 @@ export const commentsList = [
     },
     { 
         userName: "Buyan Oh",
-        time:"2 years ago",
+        time:"5 months ago",
         comments: "Ewwwww!",
         avatar:2
     },
     { 
         userName: "Sean333m",
-        time:"2 years ago",
+        time:"2 months ago",
         comments: "I feel like 90% of the time anti-drug campaigns make kids want to do drugs from how bad they are.",
         avatar:3
     },
     { 
         userName: "Neil Holland",
-        time:"2 years ago",
+        time:"3 months ago",
         comments: "I've seen this video too many times. It's starting to piss me off.",
         avatar:4
 
     },
     { 
         userName: "atenahean",
-        time:"2 years ago",
+        time:"4 months ago",
         comments: "This ad give me nightmares due to it's terrifying",
         avatar:5
 

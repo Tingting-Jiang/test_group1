@@ -2,7 +2,7 @@ import React, { useState} from "react";
 import CommentListItem from './commentListItem';
 import './style.css';
 import {commentsList} from './constants';
-import defaultUser from './Videos/default.png';
+import defaultUser from './Videos/user.png';
 
 const Comments = () => {
     const [newComment, setNewComment] = useState('');

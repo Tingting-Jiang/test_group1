@@ -2,14 +2,11 @@ import React from "react";
 import icon from './Videos/logo.png';
 import "./style.css";
 
-const Introduction =({
-    authorItem = {
-      name: "The Real Cost",
-      subscribe: "66.8K subscribers",
-      description: "Vaping can put dangerous chemicals, like diacetyl, into your lungs. Learn more about the real cost of vapes: ",
-      html:"https://therealcost.betobaccofree.hhs.gov/"
-    },
-  }) => {
+const Introduction =() => {
+    const authorItem= {
+        name: "The Real Cost",
+        description: "Vaping can put dangerous chemicals, like diacetyl, into your lungs. Visist the real cost website to learn more about the real cost of vapes.",
+    };
     return (
         <>
         <hr></hr>
@@ -27,12 +24,9 @@ const Introduction =({
                 <div className="fw-bold mb-0 introduction  ">
                     {authorItem.name}
                 </div> 
-                <div className="subscribeNum pt-0">{authorItem.subscribe}</div>
+           
                 <div className="introduction pt-1 text-wrap" >
                     {authorItem.description}
-                    <a className="link-primary " href={authorItem.html}>
-                        {authorItem.html}
-                    </a>
               </div>
             </div>
             
