@@ -10,7 +10,7 @@ const Introduction =() => {
     return (
         <>
         <hr></hr>
-        <div className="d-flex flex-row ps-1 me-1 ">
+        <div className="d-flex flex-row ps-0 me-1 ">
             <div className=" align-self-start ps-0 pe-0">
                 <img
                     src={icon}
