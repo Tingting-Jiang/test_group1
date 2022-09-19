@@ -32,7 +32,7 @@ const HomePage = () => {
 
                 {/*  About the comment */}
                <CommentsTurnedOff/>
-                <Comments/>
+               <Comments/>
       </>
     );
   };

@@ -123,6 +123,16 @@
     border: none !important;
 }
 
+.center{
+    margin: auto;
+    width:70%;
+}
+
+.comments-border{
+    padding-top:55px;
+    padding-bottom: 55px;
+}
+
 .commentsWords {
     font-size: 13px;
     padding-top:3px !important;
