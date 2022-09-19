@@ -6,7 +6,7 @@
 }
 
 .container{
-    width:60% !important;
+    width:70% !important;
 }
 .iconLine {
     overflow: hidden !important; 
@@ -121,6 +121,9 @@
     }
     #description{
         font-size: 13px !important;
+    }
+    #center{
+       width: 100% !important;
     }
 }
 

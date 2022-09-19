@@ -5,7 +5,7 @@ import "./style.css";
 const Introduction =() => {
     const authorItem= {
         name: "The Real Cost",
-        description: "Vaping can put dangerous chemicals, like diacetyl, into your lungs. Visist the real cost website to learn more about the real cost of vapes.",
+        description: "Vaping can put dangerous chemicals, like diacetyl, into your lungs. Visist The Real Cost website to learn more about the real cost of vapes.",
     };
     return (
         <>
