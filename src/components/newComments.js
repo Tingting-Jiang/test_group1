@@ -45,7 +45,7 @@ const Comments = () => {
                     />
                 </div>
                 <div className="flex-fill ps-2">
-                    <div className="overflow-scroll form-floating">
+                    <div className="overflow-scroll">
                         <textarea
                         placeholder="what's happening?"
                         className="border-1 border-secondary text-secondary form-control mb-2 pe-2"

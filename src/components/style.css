@@ -6,7 +6,7 @@
 }
 
 .container{
-    width:40% !important;
+    width:60% !important;
 }
 .iconLine {
     overflow: hidden !important; 
@@ -128,5 +128,5 @@
     padding-top:3px !important;
     color: rgb(3, 3, 3);
     padding-right:2px !important;
-
+    overflow-y: scroll !important;
 }
