@@ -47,13 +47,13 @@ const Comments = () => {
                 <div className="flex-fill ps-2">
                     <div className="overflow-scroll">
                         <textarea
-                        placeholder="what's happening?"
+                        placeholder="Add a comment"
                         className="border-1 border-secondary text-secondary form-control mb-2 pe-2"
                         value={newComment}
                         id="floatingTextarea"
                         onChange={(event) => setNewComment(event.target.value)}
                         ></textarea>
-                    <label for="floatingTextarea " >Add a comment</label>
+                    
                 </div>
         
                 <div className="float-end d-flex justify-content-end mb-1">
