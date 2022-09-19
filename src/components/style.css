@@ -107,16 +107,22 @@
     #icons {
         display: none !important;
     }
-}
+}*/
 
 @media (max-width: 425px) {
-    #commentIcon {
-        display: none !important;
+    #font-link {
+        font-size: 25px !important;
     }
-    #btnSubscribe {
-        display: none !important;
+    #btnCancel{
+        font-size: 10px !important;
     }
-} */
+    #btnSubmit{
+        font-size: 10px !important;
+    }
+    #description{
+        font-size: 13px !important;
+    }
+}
 
 .list-group-item {
     padding-left: 5px !important;
@@ -138,5 +144,9 @@
     padding-top:3px !important;
     color: rgb(3, 3, 3);
     padding-right:2px !important;
+    overflow-y: scroll !important;
+}
+
+.text-input{
     overflow-y: scroll !important;
 }

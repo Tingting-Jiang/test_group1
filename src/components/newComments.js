@@ -44,8 +44,8 @@ const Comments = () => {
                         className="rounded-circle float-start"
                     />
                 </div>
-                <div className="flex-fill ps-2">
-                    <div className="overflow-scroll">
+                <div className="flex-fill ps-2 text-input">
+                    <div className="overflow-scroll ">
                         <textarea
                         placeholder="Add a comment"
                         className="border-1 border-secondary text-secondary form-control mb-2 pe-2"
@@ -54,26 +54,28 @@ const Comments = () => {
                         onChange={(event) => setNewComment(event.target.value)}
                         ></textarea>
                     
-                </div>
+                    </div>
         
-                <div className="float-end d-flex justify-content-end mb-1">
-                    <button
-                        onClick={cancelComment}
-                        className=" btn btn-sm form-control pe-6 btnCancel"
-                        type="button"
-                    >
-                        CANCEL
-                    </button>
+                    <div className="float-end d-flex justify-content-end mb-1">
+                        <button
+                            onClick={cancelComment}
+                            className=" btn btn-sm form-control pe-6 btnCancel"
+                            type="button"
+                            id='btnCancel'
+                        >
+                            CANCEL
+                        </button>
 
-                    <button
-                        onClick={addComment}
-                        className="btn btn-sm form-control btnSubmit"
-                        type="button"
-                    >
-                        COMMENT
-                    </button>
+                        <button
+                            onClick={addComment}
+                            className="btn btn-sm form-control btnSubmit"
+                            type="button"
+                            id='btnSubmit'
+                        >
+                            COMMENT
+                        </button>
+                    </div>
                 </div>
-            </div>
 
             </div>
             {commentli.map((commentItem, key) => {

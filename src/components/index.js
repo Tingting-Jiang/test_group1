@@ -23,7 +23,7 @@ const HomePage = () => {
                     <source src={main_video} type='video/mp4'/>   
                 </video>
             </div>
-                <div className="description"> The Real Cost - Cautions Against The Use of e-Cigarettes</div>
+                <div className="description" id='description'> The Real Cost - Cautions Against The Use of e-Cigarettes</div>
                 <div className="viewDes">11,292 views&#183;Jan 23, 2022 </div>
     
                 {/*  Info of author */}
